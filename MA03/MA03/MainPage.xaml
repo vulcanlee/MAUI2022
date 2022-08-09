@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MA03.MainPage"
+             Title="觀察圖形放大效果">
+
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+            <VerticalStackLayout.Resources>
+                <ResourceDictionary>
+                    <!--請變更此資源的大小，觀察螢幕畫面上的圖片變化與解析度效果-->
+                    <x:Double x:Key="ImageSize">580</x:Double>
+                </ResourceDictionary>
+            </VerticalStackLayout.Resources>
+
+            <Label Text="{Binding Source={StaticResource ImageSize},
+                StringFormat='指定圖片顯示尺寸為 {0}'}"
+                   FontSize="28" TextColor="DodgerBlue"/>
+
+            <Label
+                Text="向量 SVG "
+                FontSize="24" TextColor="Orange"
+                HorizontalOptions="Start" />
+            <Image
+                Source="dotnet_bot.png"
+                HeightRequest="{Binding .,Source={StaticResource ImageSize}}"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="高解析點矩陣"
+                FontSize="24" TextColor="Orange"
+                HorizontalOptions="Start" />
+            <Image
+                Source="dotnet_bot419.png"
+                HeightRequest="{Binding .,Source={StaticResource ImageSize}}"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="低解析點矩陣"
+                FontSize="24" TextColor="Orange"
+                HorizontalOptions="Start" />
+            <Image
+                Source="dotnet_bot80.png"
+                HeightRequest="{Binding .,Source={StaticResource ImageSize}}"
+                HorizontalOptions="Center" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
