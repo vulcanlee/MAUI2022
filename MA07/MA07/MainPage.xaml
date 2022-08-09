@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MA07.MainPage"
+             xmlns:viewmodel="clr-namespace:MA07"
+             x:DataType="viewmodel:MainPageViewModel"
+             Title="問安 4 使用 PropertyChanged.Fody">
+
+    <ContentPage.BindingContext>
+        <viewmodel:MainPageViewModel/>
+    </ContentPage.BindingContext>
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Label
+                Text="姓氏"
+                FontSize="14"/>
+            <Entry
+                Text="{Binding LastName}"/>
+
+            <Label
+                Text="名字"
+                FontSize="14"/>
+            <Entry
+                Text="{Binding FirstName}"/>
+
+            <Button
+                Text="問安"
+                IsEnabled="True"
+                />
+
+            <Label
+                Text="{Binding SayHello}"
+                FontSize="24" TextColor="Red"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
