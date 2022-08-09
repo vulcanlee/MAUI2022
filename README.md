@@ -9,7 +9,7 @@
 |MA05|Hello World 2 自行實作屬性變更|純粹手作每個類別的 INotifyPropertyChanged 介面|
 |MA06|Hello World 3 設計具有屬性變更的基底類別|採用基底類別的設計，簡化屬性變更程式設計的複雜度|
 |MA07|Hello World 4 使用 PropertyChanged.Fody|體驗 PropertyChanged.Fody 來實作資料綁定程式設計，觀察其使用效果|
-|MA08|Hello World 5 CommunityToolkit.MVVM||
+|MA08|Hello World 5 CommunityToolkit.MVVM|CommunityToolkit.MVVM 是由微軟在維護的一個開源套件，觀察其在 .NET MAUI 上使用效果|
 |MA09|||
 |MA10|||
 |MA11|||
