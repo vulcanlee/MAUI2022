@@ -98,7 +98,7 @@ namespace MA05
 
         #region 全名 屬性
         // 使用運算式主體定義來實作屬性 get 和 set 存取子
-        public string FullName => $"你好 {LastName} {FirstName}";
+        public string FullName => $"{LastName} {FirstName}";
         #endregion
 
     }
