@@ -30,9 +30,15 @@
 
             <Button
                 Text="問安"
-                IsEnabled="True"
+                Command="{Binding SayHelloCommand}"
                 />
 
+            <!--這裡將會動態顯示輸入的全名-->
+            <Label
+                Text="{Binding FullName}"
+                FontSize="24" TextColor="Green"/>
+
+            <!--這裡將會於按下按鈕之後，才會顯示問安文字-->
             <Label
                 Text="{Binding SayHello}"
                 FontSize="24" TextColor="Red"/>
