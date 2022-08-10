@@ -30,8 +30,12 @@
 
             <Button
                 Text="問安"
-                IsEnabled="True"
+                Command="{Binding SayHelloCommand}"
                 />
+
+            <Label
+                Text="{Binding FullName}"
+                FontSize="24" TextColor="Green"/>
 
             <Label
                 Text="{Binding SayHello}"
