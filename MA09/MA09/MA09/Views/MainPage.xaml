@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodel="clr-namespace:MA09.ViewModels"
+             x:DataType="viewmodel:MainPageViewModel"
+             Title="使用滑桿選擇顏色"
+             x:Class="MA09.Views.MainPage">
+
+  <ScrollView>
+    <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+      <Image Source="prism.png"
+             SemanticProperties.Description="Cute dot net bot waving hi to you!"
+             HeightRequest="150"
+             HorizontalOptions="Center" />
+
+      <StackLayout Margin="10">
+        <BoxView Color="{Binding Color}"
+                 WidthRequest="100" HeightRequest="100"
+                 VerticalOptions="FillAndExpand" />
+
+        <Slider Value="{Binding R}"
+                DragCompletedCommand="{Binding RefreshColorCommand}" />
+        <Label Text="{Binding R255, StringFormat='R = {0}'}" />
+
+        <Slider Value="{Binding G}"
+                DragCompletedCommand="{Binding RefreshColorCommand}" />
+        <Label Text="{Binding G255, StringFormat='G = {0}'}" />
+
+        <Slider Value="{Binding B}"
+                DragCompletedCommand="{Binding RefreshColorCommand}" />
+        <Label Text="{Binding B255, StringFormat='B = {0}'}" />
+      </StackLayout>
+    </VerticalStackLayout>
+  </ScrollView>
+
+</ContentPage>
