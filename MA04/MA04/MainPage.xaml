@@ -14,13 +14,15 @@
                 Text="姓氏"
                 FontSize="14"/>
             <Entry
-                x:Name="entry姓氏"/>
+                x:Name="entry姓氏"
+                TextChanged="entry姓氏_TextChanged"/>
 
             <Label
                 Text="名字"
                 FontSize="14"/>
             <Entry
-                x:Name="entry名字"/>
+                x:Name="entry名字"
+                TextChanged="entry名字_TextChanged"/>
 
             <Button
                 x:Name="btnSayHello"
@@ -28,10 +30,15 @@
                 Clicked="btnSayHello_Clicked"
                 />
 
+            <!--這裡將會動態顯示輸入的全名-->
             <Label
-                x:Name="labelHello"
+                x:Name="labelFullName"
+                FontSize="24" TextColor="Green"/>
+
+            <Label
+                x:Name="labelSayHello"
                 FontSize="24" TextColor="Red"/>
-        
+
         </VerticalStackLayout>
     </ScrollView>
 
