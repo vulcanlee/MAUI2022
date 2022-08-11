@@ -12,7 +12,7 @@
 |MA08|Hello World 5 CommunityToolkit.MVVM|CommunityToolkit.MVVM 是由微軟在維護的一個開源套件，觀察其在 .NET MAUI 上使用效果|
 |MA09|資料綁定練習，使用滑桿選擇顏色|設計三個滑桿，分別代表 RGB 三種顏色，並且顯示組合後的顏色到區塊內|
 |MA10|使用 Reference 直接進行資料綁定|直接在 XAML 標記宣告內，進行各檢視的資料綁定宣告|
-|MA11|||
+|MA11|Data Binding 之 命令綁定與命令參數|不同 XAML 命令屬性將會綁定到 ViewModel 內同一個命令物件且可以傳遞參數的做法|
 |MA12|||
 |MA13|||
 |MA14|||

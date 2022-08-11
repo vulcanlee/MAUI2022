@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="資料綁定之命令綁定與命令參數"
+             xmlns:viewmodel="clr-namespace:MA11.ViewModels"
+             x:DataType="viewmodel:MainPageViewModel"
+             x:Class="MA11.Views.MainPage">
+
+  <ScrollView>
+    <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+      <Image Source="prism.png"
+             SemanticProperties.Description="Cute dot net bot waving hi to you!"
+             HeightRequest="150"
+             HorizontalOptions="Center" />
+
+      <Button Text="按鈕命令1"
+              Command="{Binding MyButtonCommand}"
+              CommandParameter="這裡是按鈕命令1"
+              HorizontalOptions="Center"
+              BackgroundColor="Green" TextColor="White"/>
+
+      <Button Text="按鈕命令2"
+              Command="{Binding MyButtonCommand}"
+              CommandParameter="這裡是按鈕命令2"
+              HorizontalOptions="Center"
+              BackgroundColor="Red" TextColor="White" />
+
+      <Label Text="你點選哪個按鈕呢？"/>
+      <Frame
+        CornerRadius="10" BackgroundColor="LightGray"
+        >
+        <Label Text="{Binding YourChoice}"
+             FontSize="28" TextColor="Blue"/>
+      </Frame>
+
+    </VerticalStackLayout>
+  </ScrollView>
+
+</ContentPage>
