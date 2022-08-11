@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="命令是否可以啟用執行的綁定"
+             xmlns:viewmodel="clr-namespace:MA12.ViewModels"
+             x:DataType="viewmodel:MainPageViewModel"
+             x:Class="MA12.Views.MainPage">
+
+  <ScrollView>
+    <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+      <Image Source="prism.png"
+             SemanticProperties.Description="Cute dot net bot waving hi to you!"
+             HeightRequest="150"
+             HorizontalOptions="Center" />
+
+      <Entry
+        Text="{Binding Account}"
+        Placeholder="請輸入超過6個字數的帳號"
+        PlaceholderColor="Blue"
+        BackgroundColor="LightGray"
+        HorizontalOptions="Fill"
+        />
+
+      <Label
+        Text="{Binding Message}"
+        FontSize="18" TextColor="HotPink"
+        HorizontalOptions="Center" />
+
+      <Button Text="登入"
+              Command="{Binding LoginCommand}"
+              HorizontalOptions="Center" />
+
+    </VerticalStackLayout>
+  </ScrollView>
+
+</ContentPage>
