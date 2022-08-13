@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="XAML 事件 -> 命令之行為"
+             xmlns:prism="http://prismlibrary.com"
+             xmlns:viewmodel="clr-namespace:MA14.ViewModels"
+             x:DataType="viewmodel:MainPageViewModel"
+             x:Class="MA14.Views.MainPage">
+
+  <ScrollView>
+    <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+      <Image Source="prism.png"
+             SemanticProperties.Description="Cute dot net bot waving hi to you!"
+             HeightRequest="150"
+             HorizontalOptions="Center" />
+
+      <Label Text="{Binding Message}"
+             FontSize="28" TextColor="Red"
+             Rotation="{Binding CurrentRotation}"
+             HorizontalOptions="Center" />
+
+      <Label Text="變更現在捲軸數值"/>
+      <Slider
+        Value="{Binding CurrentValue}"
+        >
+        <Slider.Behaviors>
+          <prism:EventToCommandBehavior
+            EventName="ValueChanged"
+            Command="{Binding ValueChangedCommand}"/>
+        </Slider.Behaviors>
+      </Slider>
+
+      <!--這裡使透過 EventArgsParameterPath 宣告，在命令中直接取捲軸的當前數值-->
+      <Label Text="變更旋轉角度(在命令中取得變化值)"/>
+      <Slider
+        Value="{Binding CurrentRotation}"
+        Minimum="0" Maximum="720"
+        >
+        <Slider.Behaviors>
+          <prism:EventToCommandBehavior
+            EventName="ValueChanged"
+            Command="{Binding ValueChangedWithArgementCommand}"
+            EventArgsParameterPath="NewValue"/>
+        </Slider.Behaviors>
+      </Slider>
+      
+    </VerticalStackLayout>
+  </ScrollView>
+
+</ContentPage>
