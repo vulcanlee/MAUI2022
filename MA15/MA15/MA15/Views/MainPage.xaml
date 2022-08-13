@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="使用與呼叫頁面對話窗服務"
+             x:Class="MA15.Views.MainPage"
+             NavigationPage.HasNavigationBar="True"
+             >
+
+  <ScrollView>
+    <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+      <Image Source="prism.png"
+             SemanticProperties.Description="Cute dot net bot waving hi to you!"
+             HeightRequest="150"
+             HorizontalOptions="Center" />
+
+      <Label Text="{Binding Message, StringFormat='你選擇的是 {0}'}"
+             FontSize="28" TextColor="Red"
+             HorizontalOptions="Center" />
+
+      <Button Text="選擇項目"
+              Command="{Binding DisplayActionSheetCommand}"
+              HorizontalOptions="Center" />
+
+      <Button Text="訊息確認"
+              Command="{Binding DisplayAlertCommand}"
+              HorizontalOptions="Center" />
+
+      <Button Text="請問你的大名"
+              Command="{Binding DisplayPromptCommand}"
+              HorizontalOptions="Center" />
+
+    </VerticalStackLayout>
+  </ScrollView>
+
+</ContentPage>
