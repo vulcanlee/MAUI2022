@@ -22,8 +22,9 @@ namespace MA16.Services
             return "WinUI3";
 #elif MACCATALYST
             return "MacCatalyst";
+#else
+            return "Unknow";
 #endif
-
         }
     }
 }

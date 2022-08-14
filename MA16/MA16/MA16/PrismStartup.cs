@@ -1,4 +1,5 @@
-﻿using MA16.Views;
+﻿using MA16.Services;
+using MA16.Views;
 
 namespace MA16;
 
@@ -14,5 +15,8 @@ internal static class PrismStartup
     {
         containerRegistry.RegisterForNavigation<MainPage>()
                      .RegisterInstance(SemanticScreenReader.Default);
+
+        // 註冊服務
+        containerRegistry.Register<WhichPlatformService>();
     }
 }
