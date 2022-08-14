@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="自訂可注入相依物件"
+             xmlns:viewmodel="clr-namespace:MA18.ViewModels"
+             x:DataType="viewmodel:MainPageViewModel"
+             x:Class="MA18.Views.MainPage">
+
+  <ScrollView>
+    <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+      <Image Source="prism.png"
+             SemanticProperties.Description="Cute dot net bot waving hi to you!"
+             HeightRequest="150"
+             HorizontalOptions="Center" />
+
+      <HorizontalStackLayout
+        HorizontalOptions="Center">
+        <Label Text="計算結果" FontSize="28"/>
+        <Label Text="{Binding Message}" FontSize="28" TextColor="Red" Margin="10,0,0,0"/>
+      </HorizontalStackLayout>
+
+      <Button Text="Call Web API"
+              Command="{Binding CallWebAPICommand}"
+              HorizontalOptions="Center"
+              CornerRadius="10"
+              IsEnabled="{Binding EnableButton}"/>
+
+    </VerticalStackLayout>
+  </ScrollView>
+
+</ContentPage>
