@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MA20.Views.NextPage"
+             Title="下一頁"
+             xmlns:viewmodel="clr-namespace:MA20.ViewModels"
+             x:DataType="viewmodel:NextPageViewModel">
+  <VerticalStackLayout>
+    <Label 
+            Text="這是第二頁"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+    <Button Text="Go Back"
+              Command="{Binding GoBackCommand}"/>
+  </VerticalStackLayout>
+</ContentPage>
