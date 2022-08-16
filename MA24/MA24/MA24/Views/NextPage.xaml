@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MA24.Views.NextPage"
+             Title="下一頁"
+             xmlns:viewmodel="clr-namespace:MA24.ViewModels"
+             x:DataType="viewmodel:NextPageViewModel">
+    <VerticalStackLayout>
+    <Label 
+            Text="送出帳號"
+            VerticalOptions="Start" HorizontalOptions="Start" />
+    <Label Text="{Binding Account}"
+             FontSize="28" TextColor="Blue"/>
+    <Label 
+            Text="送出密碼"
+            VerticalOptions="Start" HorizontalOptions="Start" />
+    <Label Text="{Binding Password}"
+             FontSize="28" TextColor="Blue"/>
+
+    <HorizontalStackLayout>
+      <Button Text="同意"
+              BackgroundColor="LightGreen"
+              HorizontalOptions="Fill"
+              Command="{Binding GobackCommand}"
+              CommandParameter="{Binding Source={RelativeSource Self}, Path=Text}"/>
+      <Button Text="拒絕"
+              BackgroundColor="Red"
+              TextColor="White"
+              WidthRequest="100"
+              Command="{Binding GobackCommand}"
+              CommandParameter="{Binding Source={RelativeSource Self}, Path=Text}"/>
+    </HorizontalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>

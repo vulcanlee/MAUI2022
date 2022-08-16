@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="使用者身分驗證"
+             xmlns:viewmodel="clr-namespace:MA24.ViewModels"
+             x:DataType="viewmodel:MainPageViewModel"
+             x:Class="MA24.Views.MainPage">
+
+  <ScrollView>
+    <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+      <Image Source="prism.png"
+             SemanticProperties.Description="Cute dot net bot waving hi to you!"
+             HeightRequest="150"
+             HorizontalOptions="Center" />
+
+      <Label 
+            Text="登入帳號"
+            VerticalOptions="Start" HorizontalOptions="Start" />
+      <Entry Text="{Binding Account}"/>
+      <Label 
+            Text="登入密碼"
+            VerticalOptions="Start" HorizontalOptions="Start" />
+      <Entry Text="{Binding Password}"/>
+      <Label 
+            Text="{Binding UserResponse}"
+            Margin="0,10"
+            FontSize="40" TextColor="HotPink" FontAttributes="Bold"
+            VerticalOptions="Start" HorizontalOptions="Start" />
+
+      <Button Text="登入"
+              Command="{Binding LoginCommand}"
+              HorizontalOptions="Center" />
+
+    </VerticalStackLayout>
+  </ScrollView>
+
+</ContentPage>
