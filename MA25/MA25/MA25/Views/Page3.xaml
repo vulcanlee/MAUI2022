@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MA25.Views.Page3"
+             Title="Page3"
+             BackgroundColor="LawnGreen"
+             xmlns:viewModel="clr-namespace:MA25.ViewModels"
+             x:DataType="viewModel:Page3ViewModel">
+  <VerticalStackLayout>
+    <Label 
+            Text="Welcome to .NET MAUI!"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+    <Button Text="回主頁面"
+              Command="{Binding GoHomeCommand}"
+              HorizontalOptions="Center" />
+  </VerticalStackLayout>
+</ContentPage>
