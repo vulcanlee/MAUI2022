@@ -12,7 +12,7 @@
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
 
-    <Button Text="切換 Page1"
+    <Button Text="切換 Page3"
               Command="{Binding GoNextCommand}"
               HorizontalOptions="Center" />
   </VerticalStackLayout>
