@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<FlyoutPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MA30.Views.FlyPage"
+             Title="FlyPage"
+            xmlns:viewmodel="clr-namespace:MA30.ViewModels"
+            x:DataType="viewmodel:FlyPageViewModel"
+            xmlns:prism="http://prismlibrary.com">
+
+  <FlyoutPage.Flyout>
+    <ContentPage Title="Menu">
+      <VerticalStackLayout>
+        <Button Text="頁面 1" Command="{prism:NavigateTo New1Page}"
+                CommandParameter="/FlyPage/NavigationPage/MainPage"/>
+        <Button Text="頁面 1" Command="{Binding GotoPageCommand}"
+                CommandParameter="/New1Page"/>
+        <Button Text="頁面 2" Command="{Binding GotoPageCommand}"
+                CommandParameter="/New2Page"/>
+        <Button Text="頁面 3" Command="{Binding GotoPageCommand}"
+                CommandParameter="/New3Page"/>
+      </VerticalStackLayout>
+    </ContentPage>
+  </FlyoutPage.Flyout>
+
+</FlyoutPage>
