@@ -16,23 +16,15 @@ namespace MA30.ViewModels
         public event PropertyChangedEventHandler PropertyChanged;
 
         private readonly INavigationService navigationService;
-        private readonly IEventAggregator eventAggregator;
 
         public DelegateCommand<string> GotoPageCommand { get; set; }
-        public FlyPageViewModel(INavigationService navigationService,
-            IEventAggregator eventAggregator)
+        public FlyPageViewModel(INavigationService navigationService)
         {
             this.navigationService = navigationService;
-            this.eventAggregator = eventAggregator;
 
             GotoPageCommand = new DelegateCommand<string>(async x =>
             {
-                eventAggregator.GetEvent<NavigateToPageEvent>().Publish(new NavigateToPagePayload()
-                {
-                    Url = x
-                });
-
-                //var result = await navigationService.NavigateAsync(x);
+                var result = await navigationService.NavigateAsync(x);
 
                 //await navigationService.CreateBuilder()
                 //.UseAbsoluteNavigation()

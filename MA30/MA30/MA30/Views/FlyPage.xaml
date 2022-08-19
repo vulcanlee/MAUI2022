@@ -5,19 +5,20 @@
              Title="FlyPage"
             xmlns:viewmodel="clr-namespace:MA30.ViewModels"
             x:DataType="viewmodel:FlyPageViewModel"
-            xmlns:prism="http://prismlibrary.com">
+            xmlns:prism="http://prismlibrary.com"
+            xmlns:local="clr-namespace:MA30.Views">
 
   <FlyoutPage.Flyout>
-    <ContentPage Title="Menu">
+    <ContentPage Title="xxx">
       <VerticalStackLayout>
-        <Button Text="頁面 1" Command="{prism:NavigateTo New1Page}"
+        <Button Text="首頁" Command="{Binding GotoPageCommand}"
                 CommandParameter="/FlyPage/NavigationPage/MainPage"/>
         <Button Text="頁面 1" Command="{Binding GotoPageCommand}"
-                CommandParameter="/New1Page"/>
+                CommandParameter="/FlyPage/NavigationPage/New1Page"/>
         <Button Text="頁面 2" Command="{Binding GotoPageCommand}"
-                CommandParameter="/New2Page"/>
+                CommandParameter="/FlyPage/NavigationPage/New2Page"/>
         <Button Text="頁面 3" Command="{Binding GotoPageCommand}"
-                CommandParameter="/New3Page"/>
+                CommandParameter="/FlyPage/NavigationPage/New3Page"/>
       </VerticalStackLayout>
     </ContentPage>
   </FlyoutPage.Flyout>
