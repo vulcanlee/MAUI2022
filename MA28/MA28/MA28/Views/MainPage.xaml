@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="導航工具列按鈕練習"
+             xmlns:viewmodel="clr-namespace:MA28.ViewModels"
+             x:DataType="viewmodel:MainPageViewModel"
+             x:Class="MA28.Views.MainPage">
+
+  <ContentPage.ToolbarItems>
+    <ToolbarItem Text="查詢"
+                 Command="{Binding EchoCommand}"
+                 CommandParameter="{Binding Source={RelativeSource Self}, Path=Text}"/>
+    <ToolbarItem Text="子功能1"
+                 Command="{Binding EchoCommand}" Order="Secondary"
+                 CommandParameter="{Binding Source={RelativeSource Self}, Path=Text}"/>
+    <ToolbarItem Text="子功能2"
+                 Command="{Binding EchoCommand}" Order="Secondary"
+                 CommandParameter="{Binding Source={RelativeSource Self}, Path=Text}"/>
+    <ToolbarItem Text="子功能3"
+                 Command="{Binding EchoCommand}"
+                 CommandParameter="{Binding Source={RelativeSource Self}, Path=Text}"/>
+  </ContentPage.ToolbarItems>
+  <ScrollView>
+    <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+      <Image Source="prism.png"
+             SemanticProperties.Description="Cute dot net bot waving hi to you!"
+             HeightRequest="150"
+             HorizontalOptions="Center" />
+
+      <Label Text="Hello, World!"
+             SemanticProperties.HeadingLevel="Level1"
+             FontSize="32"
+             HorizontalOptions="Center" />
+
+      <Label Text="Welcome to Prism for .NET MAUI"
+             SemanticProperties.HeadingLevel="Level2"
+             SemanticProperties.Description="Welcome to Prism for dot net Multi platform App U I"
+             FontSize="18"
+             HorizontalOptions="Center" />
+
+    </VerticalStackLayout>
+  </ScrollView>
+
+</ContentPage>
