@@ -40,7 +40,7 @@
 |MA36|StackLayout 版面配置練習|發生了重疊問題，該如何處理|
 |MA37|ScrollView 版面配置練習|延續上一個練習，讓超出內容可以捲動顯示|
 |MA38|動態顯示/隱藏控制項|設計可以顯示與隱藏效果，了解隱藏是否有占據空間|
-|MA39|使用 ContentView 組合新控制項||
+|MA39|使用 ContentView 組合新控制項|設計一個可重複使用的檢視 View 或稱為使用者控制項 User Control ，能與 ViewModel 配合使用|
 |MA40|如何使用字型圖示 Font Icon||
 |MA41|可綁定Picker的連動練習||
 |MA42|Image 控制項之 Aspect 效果測試||
