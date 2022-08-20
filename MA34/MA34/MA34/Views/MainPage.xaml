@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="{Binding Title}"
+             x:Class="MA34.Views.MainPage">
+
+      <StackLayout
+        HorizontalOptions="Fill"
+        VerticalOptions="Center"
+        Orientation="Horizontal"
+        BackgroundColor="LightBlue">
+        <Label Text="文字"
+               BackgroundColor="LightPink"/>
+        <Entry Text="答案"
+           BackgroundColor="Yellow"
+           HorizontalOptions="Fill"/>
+      </StackLayout>
+
+</ContentPage>
