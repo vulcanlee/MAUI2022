@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="{Binding Title}"
+             x:Class="MA35.Views.MainPage">
+
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="100"/>
+      <RowDefinition Height="1*"/>
+      <RowDefinition Height="1.5*"/>
+      <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="80"/>
+      <ColumnDefinition Width="*"/>
+    </Grid.ColumnDefinitions>
+
+    <BoxView Color="Pink"
+                 HorizontalOptions="Fill" VerticalOptions="Fill"
+                 Grid.Row="0" Grid.Column="0"/>
+    <BoxView Color="DarkGreen"
+                 HorizontalOptions="End" VerticalOptions="End"
+                 WidthRequest="50" HeightRequest="50"
+                 />
+
+    <BoxView Color="CadetBlue"
+                 Grid.Row="1" Grid.Column="1"/>
+    <Label Text="Row=1&#x0a;Column=1"
+               Grid.Row="1" Grid.Column="1"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" FontSize="32" 
+               TextColor="White"
+               HorizontalTextAlignment="Center"/>
+
+    <Button Text="大"
+                Grid.Row="2" Grid.Column="0"/>
+    <Button Text="小"
+                Grid.Row="2" Grid.Column="1"/>
+
+    <BoxView Color="Red"
+                 Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2"
+                 />
+    <Label Text="ColumnSpan=2&#x0a;Row=3&#x0a;Column=0"
+               Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" FontSize="60" 
+               TextColor="White"
+               HorizontalTextAlignment="Center"/>
+
+  </Grid>
+  
+</ContentPage>

@@ -36,7 +36,7 @@
 |MA32|停用軟體與硬體回上頁按鈕|導航到下一頁，皆無法使用軟體或者硬體回上一頁按鈕來返回|
 |MA33|使用 IConfirmNavigation 禁止返回|可以控制當資料尚未輸入完成，無法使用軟體或者實體返回按鍵，回到上一個頁面|
 |MA34|StackLayout 的 Fill 與 FillAndExpand 的差異|對於 LayoutOptions 的 XXXAndExpand 值僅適用於 StackLayout 這個版面配置|
-|MA35|||
+|MA35|Grid 版面配置練習|學習如何使用 Grid 這個版面配置來進行切版與套版設計|
 |MA36|||
 |MA37|||
 |MA38|||
