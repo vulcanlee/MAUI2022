@@ -38,8 +38,8 @@
 |MA34|StackLayout 的 Fill 與 FillAndExpand 的差異|對於 LayoutOptions 的 XXXAndExpand 值僅適用於 StackLayout 這個版面配置|
 |MA35|Grid 版面配置練習|學習如何使用 Grid 這個版面配置來進行切版與套版設計|
 |MA36|StackLayout 版面配置練習|發生了重疊問題，該如何處理|
-|MA37|ScrollView 版面配置練習||
-|MA38|動態顯示/隱藏控制項||
+|MA37|ScrollView 版面配置練習|延續上一個練習，讓超出內容可以捲動顯示|
+|MA38|動態顯示/隱藏控制項|設計可以顯示與隱藏效果，了解隱藏是否有占據空間|
 |MA39|使用 ContentView 組合新控制項||
 |MA40|如何使用字型圖示 Font Icon||
 |MA41|可綁定Picker的連動練習||

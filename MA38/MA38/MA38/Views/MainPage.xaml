@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MA38.Views.MainPage"
+             Title="動態顯示/隱藏控制項"
+             xmlns:viewmodel="clr-namespace:MA38.ViewModels"
+             x:DataType="viewmodel:MainPageViewModel">
+
+  <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+    <StackLayout HorizontalOptions="Center" VerticalOptions="Center"
+                 BackgroundColor="Yellow" Spacing="6">
+      <Label Text="文字1" FontSize="30"
+                   IsVisible="{Binding Label1Visible}"/>
+      <Label Text="文字2" FontSize="30"
+                   IsVisible="{Binding Label2Visible}"/>
+    </StackLayout>
+    <Button
+          Text="{Binding Btn1Text}"
+          HorizontalOptions="Center"
+          Command="{Binding Btn1Command}"/>
+    <Button
+          Text="{Binding Btn2Text}"
+          HorizontalOptions="Center"
+          Command="{Binding Btn2Command}"/>
+  </StackLayout>
+</ContentPage>
