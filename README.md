@@ -32,10 +32,10 @@
 |MA28|導航工具列按鈕練習|設計與查看導航工具列按鈕，當按按下按鈕之後，使用對話窗顯示文字|
 |MA29|客製化導航頁面 NavigationPage|繼承導航頁面類別，客製化其顏色|
 |MA30|飛出視窗頁面應用練習|使用 FlyoutPage 來設計出彈出功能表效果，並且可以進行頁面導航|
-|MA31|標籤式頁面情境演練||
-|MA32|停用軟體與硬體回上頁按鈕||
+|MA31|標籤式頁面情境演練|建立 5 個 ContentPage與 1 個 TabbedPage，該標籤頁面預設顯示標籤頁次為 頁面3|
+|MA32|停用軟體與硬體回上頁按鈕|導航到下一頁，皆無法使用軟體或者硬體回上一頁按鈕來返回|
 |MA33|使用 IConfirmNavigation 禁止返回|可以控制當資料尚未輸入完成，無法使用軟體或者實體返回按鍵，回到上一個頁面|
-|MA34|||
+|MA34|StackLayout 的 Fill 與 FillAndExpand 的差異|對於 LayoutOptions 的 XXXAndExpand 值僅適用於 StackLayout 這個版面配置|
 |MA35|||
 |MA36|||
 |MA37|||
