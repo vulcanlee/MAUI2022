@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="ScrollView 版面配置練習"
+             x:Class="MA37.Views.MainPage">
+
+  <Grid RowDefinitions="3*, 1*"
+        Margin="20">
+
+    <ScrollView
+      Grid.Row="0"
+      Orientation="Vertical"
+      >
+      <StackLayout
+        Orientation="Vertical"
+        HorizontalOptions="Fill" VerticalOptions="Start"
+        >
+
+        <BoxView
+                Color="Red"
+                HorizontalOptions="Fill"
+                HeightRequest="100"/>
+        <BoxView
+                Color="Green"
+                HorizontalOptions="Fill"
+                HeightRequest="100"/>
+        <BoxView
+                Color="Blue"
+                HorizontalOptions="Fill"
+                HeightRequest="100"/>
+        <BoxView
+                Color="Orange"
+                HorizontalOptions="Fill"
+                HeightRequest="100"/>
+        <BoxView
+                Color="Yellow"
+                HorizontalOptions="Fill"
+                HeightRequest="100"/>
+        <BoxView
+                Color="DeepPink"
+                HorizontalOptions="Fill"
+                HeightRequest="100"/>
+      </StackLayout>
+    </ScrollView>
+
+    <ScrollView
+      Orientation="Horizontal"
+      VerticalOptions="Fill"
+      Grid.Row="1"
+      HeightRequest="80"
+      >
+      <StackLayout
+            Orientation="Horizontal"
+            HorizontalOptions="Fill" VerticalOptions="Fill"
+            Spacing="6">
+        <BoxView
+                Color="Red"
+                VerticalOptions="Fill"
+                WidthRequest="80"/>
+        <BoxView
+                Color="Green"
+                VerticalOptions="Fill"
+                WidthRequest="80"/>
+        <BoxView
+                Color="Blue"
+                VerticalOptions="Fill"
+                WidthRequest="80"/>
+        <BoxView
+                Color="Orange"
+                VerticalOptions="Fill"
+                WidthRequest="80"/>
+        <BoxView
+                Color="Yellow"
+                VerticalOptions="Fill"
+                WidthRequest="80"/>
+        <BoxView
+                Color="DeepPink"
+                VerticalOptions="Fill"
+                WidthRequest="80"/>
+      </StackLayout>
+    </ScrollView>
+
+  </Grid>
+
+</ContentPage>
