@@ -44,7 +44,7 @@
     <Label Text="ColumnSpan=2&#x0a;Row=3&#x0a;Column=0"
                Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2"
                HorizontalOptions="Center"
-               VerticalOptions="Center" FontSize="60" 
+               VerticalOptions="Center" FontSize="30" 
                TextColor="White"
                HorizontalTextAlignment="Center"/>
 
