@@ -37,17 +37,17 @@
 |MA33|使用 IConfirmNavigation 禁止返回|可以控制當資料尚未輸入完成，無法使用軟體或者實體返回按鍵，回到上一個頁面|
 |MA34|StackLayout 的 Fill 與 FillAndExpand 的差異|對於 LayoutOptions 的 XXXAndExpand 值僅適用於 StackLayout 這個版面配置|
 |MA35|Grid 版面配置練習|學習如何使用 Grid 這個版面配置來進行切版與套版設計|
-|MA36|||
-|MA37|||
-|MA38|||
-|MA39|||
-|MA40|||
-|MA41|||
-|MA42|||
-|MA43|||
-|MA44|||
-|MA45|||
-|MA46|||
+|MA36|StackLayout 版面配置練習|發生了重疊問題，該如何處理|
+|MA37|動態顯示/隱藏控制項||
+|MA38|ScrollView 版面配置練習||
+|MA39|使用 ContentView 組合新控制項||
+|MA40|如何使用字型圖示 Font Icon||
+|MA41|可綁定Picker的連動練習||
+|MA42|Image 控制項之 Aspect 效果測試||
+|MA43|可綁定的版面配置，Layout<T> 動態顯示內容的應用練習|在版面配置內，顯示集合紀錄|
+|MA44|CollectionView 的應用練習||
+|MA45|ListView 控制項的功能與特色||
+|MA46|集合資料CRUD 顯示資料1||
 |MA47|||
 |MA48|||
 |MA49|||
